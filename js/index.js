@@ -36,7 +36,7 @@ else
         {for (let i = 0; i < 50; i++) {
         renderMonster(monsterArray[i])
         }}
-    else { for (let i = start; i < num; i++) {
+    else  { for (let i = start; i < num; i++) {
         renderMonster(monsterArray[i])}}
     }
 
@@ -97,7 +97,7 @@ function createMonster(e) {
         body: JSON.stringify(monsterObj)
         })
         .then (resp => resp.json())
-        .then(newMonster => renderMonster(newMonster))
+        // .then(newMonster => renderMonster(newMonster))
     formNode.reset()
 }
 
