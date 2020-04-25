@@ -6005,6 +6005,35 @@
       "age": 13,
       "description": "131313",
       "id": 1001
+    },
+    {
+      "name": "Buddy",
+      "age": 9091.3,
+      "description": "Juniors Swamp Monster",
+      "id": 1002
+    },
+    {
+      "id": 1003
+    },
+    {
+      "id": 1004
+    },
+    {
+      "id": 1005
+    },
+    {
+      "name": "what",
+      "age": "22111",
+      "description": "u mean",
+      "id": 1006
+    },
+    {
+      "monsterObj": {
+        "name": "bet",
+        "age": "92292",
+        "description": "this works"
+      },
+      "id": 1007
     }
   ]
 }
