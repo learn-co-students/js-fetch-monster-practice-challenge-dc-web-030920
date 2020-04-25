@@ -6001,28 +6001,10 @@
       "id": 1000
     },
     {
-      "name": "13",
-      "age": 13,
-      "description": "131313",
-      "id": 1001
-    },
-    {
-      "name": "",
-      "age": "",
-      "bio": "",
-      "id": 1002
-    },
-    {
-      "name": "",
-      "age": "",
-      "bio": "",
-      "id": 1003
-    },
-    {
-      "name": "",
-      "age": "",
-      "bio": "",
-      "id": 1004
+      "name": "Alex",
+      "age": "37",
+      "bio": "destroyer of worlds",
+      "id": 1005
     }
   ]
 }
