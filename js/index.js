@@ -1,6 +1,6 @@
 var monsterCount = 0;
 var direction = true;
-
+var max = 0
 
 document.addEventListener("DOMContentLoaded", function(){
     fetchMonsters()
@@ -13,7 +13,13 @@ document.addEventListener("DOMContentLoaded", function(){
         let monsterContainer = document.getElementById("monster-container")
         monsterContainer.innerHTML = '';
         direction = true
-        fetchMonsters()
+        if(monsterCount === max){
+            alert("Aint no monsters Junior")
+        }else{
+            monsterContainer.innerHTML = '';
+            fetchMonsters()
+        }
+        
     })
     backBtn.addEventListener("click", function(){
         let monsterContainer = document.getElementById("monster-container")
@@ -42,7 +48,7 @@ function renderMonsters(data){
     let monsterContainer = document.getElementById("monster-container")
     if (direction === true){
     for(var i = 0; i < 50; i++){
-
+        
         let div = document.createElement("div")
         let h2 = document.createElement("h2")
         h2.innerText = data[monsterCount].name
@@ -53,6 +59,8 @@ function renderMonsters(data){
         div.append(h2,h4,p)
         monsterContainer.append(div)
         monsterCount++
+        max = data.length
+        
         
     }
 }else{
@@ -68,7 +76,6 @@ function renderMonsters(data){
             div.append(h2,h4,p)
             monsterContainer.append(div)
             monsterCount++
-            
         }    
 }
 
@@ -96,7 +103,9 @@ function createMonster(event){
  
         body: JSON.stringify(
         { 
-            monsterObj
+            "name": monsterObj.name,
+            "age": monsterObj.age,
+            "description": monsterObj.description
         })
     })
 
